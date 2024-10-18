@@ -12,6 +12,4 @@ def bubble_sort(lista: list) -> None:
             changed = True
     
     if changed:
-        return bubble_sort(lista)
-    
-    return lista
+        bubble_sort(lista)
