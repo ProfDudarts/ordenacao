@@ -1,5 +1,5 @@
 
-def bubble_sort(lista: list) -> None:
+def bubble_sort(listaBS: list) -> None:
     def sort(vector: list) -> list:
         def compare(a: float, b: float):
             if a > b:
@@ -15,11 +15,8 @@ def bubble_sort(lista: list) -> None:
             return vector
         return sort(vector[:vector_len-1])+ (vector[vector_len-1:])
     
-    listaBS = sort(lista)
-    
-    for i in range(len(listaBS)):
-        lista[i] = listaBS[i]
-
-
+    lista = sort(listaBS)
+    listaBS.clear()
+    listaBS.extend(lista)
 
 #  Guilherme P. Santos
