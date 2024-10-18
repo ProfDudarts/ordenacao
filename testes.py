@@ -1,4 +1,4 @@
-from lib.ordenacao import *
+from lib.ordenacao import bubble_sort
 
 listas = [
     {
