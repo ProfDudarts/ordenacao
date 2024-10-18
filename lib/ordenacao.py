@@ -15,8 +15,13 @@ def bubble_sort(listaBS: list) -> None:
             return vector
         return sort(vector[:vector_len-1])+ (vector[vector_len-1:])
     
+    # lista = sort(listaBS)
+    # listaBS.clear()
+    # listaBS.extend(lista)
+
     lista = sort(listaBS)
-    listaBS.clear()
-    listaBS.extend(lista)
+    for i in range(len(listaBS)):
+        listaBS[i] = lista[i]
+
 
 #  Guilherme P. Santos
