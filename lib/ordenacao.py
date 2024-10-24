@@ -8,4 +8,3 @@ def bubble_sort(lista):
                 sorteado = True
         if not sorteado:
             break
-            
