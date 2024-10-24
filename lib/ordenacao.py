@@ -1,15 +1,10 @@
-
-def bubble_sort(lista: list) -> None:
-    changed = False
-
-    for i in range(len(lista) - 1):
-        current = lista[i]
-        _next = lista[i + 1]
-
-        if current > _next:
-            lista[i] = _next
-            lista[i + 1] = current
-            changed = True
-    
-    if changed:
-        bubble_sort(lista)
+def bubble_sort(lista):
+    x = len(lista)
+    for i in range(x):
+        sorteado = False
+        for j in range(0, x-i-1):
+            if lista[j] > lista[j + 1]:
+                lista[j], lista[j + 1] = lista[j + 1], lista[j]
+                sorteado = True
+        if not sorteado:
+            break
