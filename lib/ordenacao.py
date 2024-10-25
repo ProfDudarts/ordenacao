@@ -10,5 +10,13 @@ def bubble_sort(lista):
         if not sorteado:
             break
 
-def selection_sort():
-    pass
+def selection_sort(lista: list) -> None:
+    tamanho = len(lista)
+    for i in range(tamanho):
+        menor = i
+        for j in range(i+1, tamanho):
+            if lista[j] < lista[menor]:
+                menor = j
+        lista[i], lista[menor] = lista[menor], lista[i]
+    print(lista)
+
