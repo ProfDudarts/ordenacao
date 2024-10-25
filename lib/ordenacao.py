@@ -15,7 +15,5 @@ def selection_sort(vector: list) -> None:
     for i in range(len(vector)): 
         limite += 1
         for j in range(limite, len(vector)):
-            range_ = range(limite, len(vector))
-            menor_j, maior_i = vector[j],vector[i]
             if vector[j] < vector[i]:    
                 vector[j], vector[i] = vector[i], vector[j]
