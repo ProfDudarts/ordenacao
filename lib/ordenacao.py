@@ -27,7 +27,3 @@ def selection_sort(lista):
         lista[i], lista[min_index] = lista[min_index], lista[i]
 
     return lista
-
-
-
-print(selection_sort(lista))
