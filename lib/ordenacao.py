@@ -19,4 +19,3 @@ def selection_sort(lista: list) -> None:
                 min = j
         lista[i], lista[min] = lista[min], lista[i]
     print(lista)
-    
