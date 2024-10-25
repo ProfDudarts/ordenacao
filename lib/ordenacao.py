@@ -10,12 +10,22 @@ def bubble_sort(lista):
         if not sorteado:
             break
 
-def selection_sort(lista: list) -> None:
-    n = len(lista)
-    for i in range(n):
-        min = i
-        for j in range(i+1, n):
-            if lista[j] < lista[min]:
-                min = j
-        lista[i], lista[min] = lista[min], lista[i]
-    print(lista)
+def selection_sort(lista):
+    ordenacao = len(lista)  
+    for i in range(ordenacao): 
+        menor_indice = i  
+
+    
+        for j in range(i + 1, ordenacao):
+            if lista[j] < lista[menor_indice]:  
+                menor_indice = j  
+
+        
+        if menor_indice != i:
+            lista[i], lista[menor_indice] = lista[menor_indice], lista[i]
+    
+    return lista
+
+lista = [7, 9, 6, 5, 8, 4, 3, 2, 1, 10]
+print(selection_sort(lista))
+
