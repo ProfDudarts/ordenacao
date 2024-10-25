@@ -12,5 +12,5 @@ listas = [
 
 for lista in listas:
     lista_copiada = lista["original"].copy()
-    selection_sort(lista_copiada)
+    bubble_sort(lista_copiada)
     assert lista_copiada == lista["ordenada"]
