@@ -10,5 +10,11 @@ def bubble_sort(lista):
         if not sorteado:
             break
 
-def selection_sort():
-    pass
+def selection_sort(lista: list) -> list:
+    for i in range(len(lista)):
+        menor = i
+        for k in range(i + 1, len(lista)):
+            if lista[k] < lista[menor]:
+                menor = k
+        lista[i], lista[menor] = lista[menor], lista[i]
+    return lista
