@@ -11,9 +11,7 @@ def bubble_sort(lista: list) -> None:
             break
 
 def selection_sort(vector: list) -> None:
-    limite = 0
     for i in range(len(vector)): 
-        limite += 1
-        for j in range(limite, len(vector)):
+        for j in range(i, len(vector)):
             if vector[j] < vector[i]:    
                 vector[j], vector[i] = vector[i], vector[j]
