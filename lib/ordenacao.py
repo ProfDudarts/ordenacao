@@ -13,7 +13,7 @@ def bubble_sort(lista: list) -> None:
 def selection_sort(vector: list) -> None:
     for i in range(len(vector)): 
         min = i
-        for j in range(i, len(vector)):
+        for j in range(i+1, len(vector)):
             if vector[j] < vector[min]:    
                 min = j
         vector[min], vector[i] = vector[i], vector[min]
