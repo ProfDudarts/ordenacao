@@ -8,3 +8,13 @@ def bubble_sort(lista):
                 sorteado = True
         if not sorteado:
             break
+
+
+def selection_sort(lista):
+    x = len(lista)
+    for i in range(x):
+        min = i
+        for j in range(i + 1, x):
+            if lista[j] < lista[min]:
+                min = j
+        lista[i], lista[min] = lista[min], lista[i]
