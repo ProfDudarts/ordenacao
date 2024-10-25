@@ -16,5 +16,5 @@ def selection_sort(lista: list) -> None:
         menor = i
         for j in range(i + 1, tamanho):
             menor = j
-        lista[i], lista[menor], list[i]
+        lista[i], lista[menor], lista[i]
         print(lista)
