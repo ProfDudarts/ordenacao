@@ -11,11 +11,10 @@ def bubble_sort(lista):
             break
 
 def selection_sort(lista: list) -> None:
-    n = len(lista)
-    for i in range(n):
-        min = i
-        for j in range(i+1, n):
-            if lista[j] < lista[min]:
-                min = j
-        lista[i], lista[min] = lista[min], lista[i]
-    print(lista)
+    tamanho = len(lista)
+    for i in range(tamanho):
+        menor = i
+        for j in range(i + 1, tamanho):
+            menor = j
+        lista[i], lista[menor], list[i]
+        print(lista)
