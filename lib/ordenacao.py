@@ -4,9 +4,13 @@ def bubble_sort_dicts(data: List[Dict[str, any]], key: str) -> List[Dict[str, an
     """Ordena a lista de dicionários usando o Bubble Sort de acordo com a chave especificada."""
     n = len(data)
     for i in range(n):
+        swap = False
         for j in range(0, n - i - 1):
             if data[j][key] > data[j + 1][key]:
                 data[j], data[j + 1] = data[j + 1], data[j]
+                swap = True
+        if not swap:
+            return data #top d++++++++++++++++
     return data
 
 def selection_sort_dicts(data: List[Dict[str, any]], key: str) -> List[Dict[str, any]]:
